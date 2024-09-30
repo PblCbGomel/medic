@@ -1,0 +1,78 @@
+header {
+  background-color: #ffffff;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 24px 32px;
+  z-index: 100;
+}
+
+.nav-btn {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: "#3E3E4B";
+  font-size: 16px;
+  box-sizing: border-box;
+  padding: 8px 16px;
+  color: #3e3e4b;
+  cursor: pointer;
+}
+
+.nav-btn:hover {
+  color: #28aa47;
+  border-radius: 100px;
+  background-color: #f5f6fa;
+}
+
+.header-btns {
+  display: flex;
+  gap: 16px;
+}
+
+.header-tg-btn,
+.header-whatsapp-btn {
+  background-color: #f5f6fa;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+
+.header-tg-btn {
+  background-image: url(../../../public/tg.png);
+}
+
+.header-tg-btn:hover {
+  background-color: #33a6dc;
+}
+
+.header-whatsapp-btn {
+  background-image: url(../../../public/whatsapp.png);
+}
+
+.header-whatsapp-btn:hover {
+  background-color: #45c459;
+}
+
+.header-booking-btn {
+  background-color: #3e3e4b;
+  height: 40px;
+  font-weight: 400;
+  box-sizing: border-box;
+  padding: 8px 20px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f5f6fa;
+  border-radius: 100px;
+  cursor: pointer;
+}

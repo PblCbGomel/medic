@@ -1,0 +1,64 @@
+.documents-wrapper {
+  background-color: #f5f6fa;
+  border-radius: 32px;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: calc(100svh - 220px);
+  margin: 0 16px;
+}
+
+.documents-wrapper h2 {
+  text-align: center;
+  font-size: 40px;
+  line-height: 48px;
+  margin-bottom: 32px;
+}
+
+.documents-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.document {
+  border-radius: 32px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 2px solid white;
+}
+
+.document:hover {
+  border: 2px solid #23b16d80;
+}
+
+.first-doc-content {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.document-icon {
+  border-radius: 50%;
+  background-color: #f5f6fa;
+  width: 36px;
+  height: 36px;
+  background-image: url(../../../public/File.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.doc-arrow {
+  width: 36px;
+  height: 36px;
+  background-position: center;
+  background-image: url(../../../public/ArrowSquareOut.png);
+  background-repeat: no-repeat;
+}

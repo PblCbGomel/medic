@@ -1,0 +1,132 @@
+.main-page {
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+.main-container {
+  border-radius: 32px;
+  background-image: url(../../../public/backgrounds/cheeky-young-woman-with-blond-hair-holding-hands-near-natural-face-with-light-make-up-winking-smiling-camera-standing-white-background\ 1.png);
+  height: 700px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  background-color: #f5f6fa;
+  position: relative;
+}
+
+.main-container-info {
+  width: 544px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 88px 0 0 64px;
+}
+
+.main-container h2 {
+  color: #3e3e4b;
+  line-height: 72px;
+  font-size: 72px;
+}
+
+.main-container p {
+  color: #3e3e4b;
+  font-size: 22px;
+  line-height: 32px;
+  width: 490px;
+}
+
+.main-container button {
+  text-decoration: none;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  padding: 16px 32px;
+  color: white;
+  font-size: 22px;
+  background: linear-gradient(64.6deg, #23b16d -2.2%, #70db3d 116.25%);
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 184px;
+}
+
+.main-line {
+  position: absolute;
+  bottom: 60px;
+  left: 64px;
+  background-color: #3e3e4b;
+  width: 112px;
+  height: 4px;
+  border-radius: 100px;
+}
+
+.places-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0 0;
+  gap: 16px;
+  position: relative;
+  max-height: 192px;
+}
+
+.place-card {
+  background-color: #f5f6fa;
+  border-radius: 24px;
+  padding: 0 32px 16px;
+  box-sizing: border-box;
+  display: flex;
+  gap: 16px;
+  height: 192px;
+  min-width: calc(32%);
+  overflow: hidden;
+  position: relative;
+}
+
+.place-card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.place-card-icon {
+  margin-top: 36px;
+  background-image: url(../../../public/MapPin.png);
+  height: 28px;
+  width: 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.place-card h4 {
+  margin-top: 32px;
+  color: #3e3e4b;
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 700;
+  max-width: 250px;
+}
+
+.place-card p {
+  color: #8b8c9c;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.tel-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.place-card:hover {
+  z-index: 1000;
+  height: 272px;
+  background-color: white;
+  box-shadow: 0px 4px 16px 0px #0000001f;
+  transform: translateY(-80px);
+}
+
+.place-card:hover .tel-container {
+  gap: 16px;
+}
