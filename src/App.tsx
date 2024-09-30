@@ -15,7 +15,7 @@ function App() {
           <Route path={"main"} element={<MainPage />}></Route>
           <Route path={"documents"} element={<DocumentsPage />}></Route>
           {/* <Route  path={''} element={}></Route> */}
-          <Route path={"*"} element={<Navigate to="/" replace />}></Route>
+          <Route path={"*"} element={<Navigate to="/main" replace />}></Route>
         </Routes>
       </main>
     </BrowserRouter>
