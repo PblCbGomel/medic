@@ -44,6 +44,7 @@ export function Header() {
       <div className="header-btns">
         <div className="header-tg-btn"></div>
         <div className="header-whatsapp-btn"></div>
+        <div className="header-chat-btn"></div>
         <div className="header-booking-btn">Записаться на прием</div>
       </div>
     </header>

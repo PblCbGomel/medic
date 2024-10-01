@@ -169,4 +169,44 @@
   .places-container {
     flex-direction: column;
   }
+
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .main-container-info {
+    border-radius: 24px;
+    background-color: #f5f6fa;
+    padding: 24px 32px 68px;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .main-container-info *,
+  .main-container-info p,
+  .main-container-info button {
+    font-size: 16px;
+    line-height: 24px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .main-container-info h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .main-container-info button {
+    height: 56px;
+  }
+
+  .main-line {
+    bottom: 24px;
+  }
+
+  .main-container {
+    height: 652px;
+    background-position: right;
+  }
 }

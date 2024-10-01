@@ -140,6 +140,10 @@ header {
     left: 0;
   }
 
+  .header-chat-btn {
+    display: none;
+  }
+
   /* контейнер меню */
   .menu__box {
     display: block;
@@ -184,5 +188,25 @@ header {
     padding: 12px;
     box-sizing: border-box;
     margin-top: 12px;
+  }
+}
+
+@media (max-width: 800px) {
+  .header-whatsapp-btn,
+  .header-tg-btn,
+  .header-booking-btn {
+    display: none;
+  }
+
+  .header-chat-btn {
+    display: block;
+    background-color: #3e3e4b;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    background-image: url(../../../public/ChatCircleText.png);
   }
 }
