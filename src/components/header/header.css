@@ -76,3 +76,113 @@ header {
   border-radius: 100px;
   cursor: pointer;
 }
+
+.burger {
+  display: none;
+}
+
+#menu__toggle {
+  opacity: 0;
+}
+
+@media (max-width: 1280px) {
+  .nav-btn {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .menu__btn {
+    display: flex; /* используем flex для центрирования содержимого */
+    align-items: flex-end; /* центрируем содержимое кнопки */
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #616161;
+  }
+  .menu__btn > span::before {
+    content: "";
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: "";
+    top: 8px;
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+  }
+
+  /* контейнер меню */
+  .menu__box {
+    display: block;
+    box-sizing: border-box;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 80px 16px;
+
+    background-color: #eceff1;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+  }
+  /* элементы меню */
+  .menu__item {
+    display: block;
+    color: #3e3e4b;
+    font-size: 32px;
+    line-height: 40px;
+    height: 104px;
+    padding: 32px 64px;
+    box-sizing: border-box;
+  }
+
+  .menu__box::after {
+    content: "Меню";
+    position: absolute;
+    top: 24px;
+    left: 88px;
+    color: #3e3e4b;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+  }
+
+  .menu__wrapper {
+    background-color: #f5f6fa;
+    border-radius: 24px;
+    padding: 12px;
+    box-sizing: border-box;
+    margin-top: 12px;
+  }
+}

@@ -1,5 +1,6 @@
 import React from "react";
 import "./header.css";
+import { BurgerMenu } from "./header-burger";
 
 function Logo() {
   return (
@@ -13,7 +14,17 @@ function Logo() {
 export function Header() {
   return (
     <header>
-      <Logo />
+      <div
+        style={{
+          display: "flex",
+          gap: "32px",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <BurgerMenu />
+        <Logo />
+      </div>
       <div style={{ display: "flex", gap: "8px" }}>
         <div className="nav-btn">Услуги</div>
         <div className="nav-btn">Врачи</div>

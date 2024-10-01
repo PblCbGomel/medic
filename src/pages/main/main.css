@@ -130,3 +130,43 @@
 .place-card:hover .tel-container {
   gap: 16px;
 }
+
+@media (max-width: 1280px) {
+  .main-container {
+    height: 986px;
+    background-position: bottom;
+  }
+
+  .main-container-info p {
+    width: 380px;
+  }
+
+  .place-card {
+    height: inherit;
+    max-height: inherit;
+  }
+
+  .place-card .tel-container {
+    gap: 16px;
+  }
+
+  .places-container {
+    height: auto;
+    max-height: 100%;
+  }
+
+  .place-card:hover {
+    transform: none;
+    height: 100%;
+  }
+
+  .place-card h4 {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  .places-container {
+    flex-direction: column;
+  }
+}
